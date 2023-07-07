@@ -17,9 +17,10 @@ function App() {
   <Links/>
   <NavLinks/>
    <Switch>
-   <Route path="/login"
+   {/* <Route path="/login"
     render= {()=> (isLogin ? <Redirect to ="/"/> : <Login /> )}
-   />
+   /> */}
+   <Route path = "/login"/>
    <Route path='/profile/:id' Component={Profile}/>
    <Route path='/profile' Component={Profile}/>
    <Route path='/about' Component={About}/>
